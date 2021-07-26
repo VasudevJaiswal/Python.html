@@ -25,6 +25,6 @@
 # This function allows the user to take input from the keyboard as a string.
 
 a = input("Enter Your Name:")
-a = int(a)  # IF you use the this int(a) method then you find integer class 
+a = int(a)  # IF you use the this int(a) method then you find integer class .../
 print(a)  #This function allows people the users to take input from the keyboad as the string
 print(type(a)) 
