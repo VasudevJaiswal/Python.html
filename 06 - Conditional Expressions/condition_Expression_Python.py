@@ -16,18 +16,28 @@
 # Syntax: ?
 
 
-# if (condition1):		// if condition 1 is true
+# if (condition1):		 // if condition 1 is true
 # 	print(“yes”)
 # elif (condition2):		// if condition 2 is true
 # 	print(“No”)
 # else:				// otherwise
 # 	print(“May be”)
 
+var = int(input("Enter the Integers"))
+if(var>46):
+    print("The value of var is greater than 3")
+elif(var>7):
+    print("The value of var is greater than 7")
+else:
+    print("The value of a is nor 3 or nor 7")
 
-a = 45 
-if(a>3):
-    print("The value of a is greater than 3")
-    elif(a>7):
-        print("The value of a is greater than 7")
-        else:
-            print("The vlaue is not greater than 3 or 7")
+
+    # "Age valid for drink if elif or else "
+
+    age = int(input("Enter Your Age:"))
+if(var>=18):
+    print("You are Eligible for drink")
+elif(var=18):
+    print("You are Eligible for drink")
+else:
+    print("You are not Eligible for drink")
