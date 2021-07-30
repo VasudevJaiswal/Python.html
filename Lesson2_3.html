@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Python DEV VASU</title>
+        <meta name="description" content="Python Dev Vasudev Jaiswal ">
+        <meta name="keywords"
+          content="Python Lessons, Python Tutorial , Python, Python in html , Python Vasudev Jaiswal Blog, Vasudev Jaiswal Blog">
+        <meta name="Author" content="Vasudev Jaiswal">
+      
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+      </head>
+      
+      <body>
+        <!--Navigation bar-->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Python<span>&nbspDev</span><span>&nbspVasu</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+      
+      
+      
+                <li><a href="Lesson.HTML">Courses</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+                <li class="btn-trial"><a href="Lesson.html">Free Trail</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!--/ Navigation bar--> <br> 
+ <!-- Cotent Python  -->
+
+ <section class="post-content">
+     <h1>Tuples in Python, Lets Go!</h1>
+    <p>Variables can be of the datatype <code>tuple</code>. A tuple is collection that <em>cannot be modified</em>.</p>
+<p>It differs from a list, in that lists can be changed or modified after creation.<br>A tuple is defined using parenthesis <code>(</code> and <code>)</code> instead of <code>[</code> and <code>]</code> that a list uses.</p>
+<p>If you want to change the data during program execution, use a list instead of a tuple.</p>
+<p><strong>Related Course:</strong> <a target="_blank" href="https://gum.co/dcsp" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Complete Python Programming Course &amp; Exercises</a></p>
+<h2 id="Python-tuple"><a href="#Python-tuple" class="headerlink" title="Python tuple"></a>Python tuple</h2><p>A tuple is an immutable sequence type. A tuple is a sequence, but its values cannot be altered.</p>
+<p>The values of a tuple cannot change. This is very important, because this is the only difference between a <a href="https://pythonprogramminglanguage.com/lists/">list</a>.</p>
+<p>To create a tuple, all you need to do is define a set of comma-separated values between the parenthesis.</p>
+<p>An empty tuple would be defined as:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">tup1 = ()</span><br></pre></td></tr></table></figure>
+<blockquote><p>be careful with parenthesis, <code>()</code> is a tuple and <code>[]</code> is a list and <code>{}</code> a dictionary</p>
+</blockquote>
+<p>A tuple with one item ( a comma is needed in the end ):</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = (<span class="number">1</span>,) </span><br></pre></td></tr></table></figure>
+<p>A tuple with multiple items:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>) </span><br></pre></td></tr></table></figure>
+<p>You can create all kinds of tuples:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">t1 = (<span class="string">&#x27;physics&#x27;</span>, <span class="string">&#x27;chemistry&#x27;</span>, <span class="string">&#x27;geography&#x27;</span>, <span class="string">&#x27;history&#x27;</span>)</span><br><span class="line">t2 = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span> )</span><br><span class="line">t3 = (<span class="string">&quot;a&quot;</span>, <span class="string">&quot;b&quot;</span>, <span class="string">&quot;c&quot;</span>, <span class="string">&quot;d&quot;</span>)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>Note:</strong> Even if your tuple has only one element, the comma is needed between the parenthesis.</p>
+</blockquote>
+<p><img src="https://d33wubrfki0l68.cloudfront.net/13d63c1927252fe8bf6d11ac33cb0d1c07ab4c45/b9682/wp-content/uploads/2020/02/python-tuple.gif" alt="python tuple"></p>
+<p><strong>Related Course:</strong> <a target="_blank" href="https://gum.co/dcsp" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Complete Python Programming Course &amp; Exercises</a></p>
+<h2 id="Accessing-tuples"><a href="#Accessing-tuples" class="headerlink" title="Accessing tuples"></a>Accessing tuples</h2><p>To access individual elements, we use square brackets. To print the first element (Python starts counting from zero):<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(x[<span class="number">0</span>]) </span><br></pre></td></tr></table></figure></p>
+<p>You’ll learn that in Python, every sequence starts counting from zero (<em>tuples, lists, strings</em>). The zeroth element is always the first element.</p>
+<p>To print the second element:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(x[<span class="number">1</span>]) </span><br></pre></td></tr></table></figure>
+<p>You can access tuples both in the interpreter and during code execution.<br>In the interpreter <code>python</code>, you can type commands.</p>
+<p>Lets create a tuple</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t1 = (<span class="string">&#x27;coffee&#x27;</span>,<span class="string">&#x27;tea&#x27;</span>,<span class="string">&#x27;orange juice&#x27;</span>,<span class="string">&#x27;lemonade&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>Then output some elements</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t1[<span class="number">0</span>]</span><br><span class="line"><span class="string">&#x27;coffee&#x27;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>t1[<span class="number">1</span>]</span><br><span class="line"><span class="string">&#x27;tea&#x27;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://d33wubrfki0l68.cloudfront.net/e23902e05e607a6f2cd07cc3886e470ab5857fae/b698b/wp-content/uploads/2020/02/python-access-tuple.gif" alt="python access tuple"></p>
+<p>And why not try to change a value</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t1[<span class="number">1</span>] = <span class="string">&#x27;water&#x27;</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">TypeError: <span class="string">&#x27;tuple&#x27;</span> <span class="built_in">object</span> does <span class="keyword">not</span> support item assignment</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>Remember, <em>the contents of a tuple cannot be changed after creation</em>.</p>
+<p><img src="https://d33wubrfki0l68.cloudfront.net/25dbb621e95d035987748a4246404ee31d6c3efb/ebcd9/wp-content/uploads/2019/09/tuples.png" alt="python tuple example"></p>
+<p>To print the last element, you can count from the back using the minus sign.<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(x[-<span class="number">1</span>]) </span><br></pre></td></tr></table></figure></p>
+<p><strong>Related Course:</strong> <a target="_blank" href="https://gum.co/dcsp" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Complete Python Programming Course &amp; Exercises</a></p>
+<h2 id="Tuple-Unpacking"><a href="#Tuple-Unpacking" class="headerlink" title="Tuple Unpacking"></a>Tuple Unpacking</h2><p>You can unpack a tuple. A package tuple object has more than one value like:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
+<p>To unpack the tuple you can do this:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>x,y,z = t</span><br></pre></td></tr></table></figure>
+<p>Then each variable (x,y,z) will contain one of the tuples values:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>x</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>y</span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>z</span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p><img src="https://d33wubrfki0l68.cloudfront.net/0a5dd52672481f45cc09863db30f747514630415/b5d02/wp-content/uploads/2020/02/tuple-unpacking.gif" alt="python unpack tuple"></p>
+<p>When unpacking, the number of variables must match the number of values in the tuple:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>x,y = t</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">ValueError: too many values to unpack (expected <span class="number">2</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p><strong>Related Course:</strong> <a target="_blank" href="https://gum.co/dcsp" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Complete Python Programming Course &amp; Exercises</a></p>
+<h2 id="Tuple-assignment"><a href="#Tuple-assignment" class="headerlink" title="Tuple assignment"></a>Tuple assignment</h2><p>If you define a tuple, Python allows the parenthesis to be left out. In Python these are the same:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p>So you can do unpacking like this:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>t</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>x,y,z = t</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>x</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>y</span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>z</span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>So it works both if parenthesis are written or left out. For clarity, you could add them.</p>
+<p>When in doubt, you can always call <code>type()</code>.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">type</span>(t)</span><br><span class="line">&lt;<span class="class"><span class="keyword">class</span> &#x27;<span class="title">tuple</span>&#x27;&gt;</span></span><br><span class="line"><span class="class">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<h2 id="Python-tuple-append"><a href="#Python-tuple-append" class="headerlink" title="Python tuple append"></a>Python tuple append</h2><p>Once defined, the contents of <strong>a tuple cannot be changed</strong>.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>t.append(<span class="number">4</span>)</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">AttributeError: <span class="string">&#x27;tuple&#x27;</span> <span class="built_in">object</span> has no attribute <span class="string">&#x27;append&#x27;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>That is by design. If you want to append values, you should use a list.</p>
+<blockquote>
+<p><strong>Note:</strong> Tuples cannot be changed. But what you can do, is create a new tuple and overwrite it.</p>
+</blockquote>
+<p>However, you can add a tuple to a tuple:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = t + (<span class="number">4</span>,)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>t</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>A new element has been appended at the end of the tuple, by appending two tuples.</p>
+<p><strong>Related Course:</strong> <a target="_blank" href="https://gum.co/dcsp" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Complete Python Programming Course &amp; Exercises</a></p>
+<h2 id="Python-tuple-insert"><a href="#Python-tuple-insert" class="headerlink" title="Python tuple insert"></a>Python tuple insert</h2><p>Start with a tuple, like this:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">5</span>)</span><br></pre></td></tr></table></figure>
+<p>To insert a new tuple, create three tuples and the tuple to insert will go in the middle.<br>So you can use tuple slicing <code>[start:end]</code> and combine.</p>
+<p>The example below shows how a new tuple is created with a new element in the middle:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = t[<span class="number">0</span>:<span class="number">2</span>] + (<span class="number">3</span>,) + t[<span class="number">2</span>:<span class="number">4</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>t</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="Python-tuple-modify"><a href="#Python-tuple-modify" class="headerlink" title="Python tuple modify"></a>Python tuple modify</h2><p>The contents of a tuple cannot be changed. If you try it will throw an TypeError.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t[<span class="number">1</span>] = <span class="number">2</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">TypeError: <span class="string">&#x27;tuple&#x27;</span> <span class="built_in">object</span> does <span class="keyword">not</span> support item assignment</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>You can get around this by creating a new tuple.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = t[<span class="number">0</span>:<span class="number">1</span>] + (<span class="number">0</span>,) + t[<span class="number">2</span>:]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>t</span><br><span class="line">(<span class="number">1</span>, <span class="number">0</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<h2 id="Python-tuple-delete"><a href="#Python-tuple-delete" class="headerlink" title="Python tuple delete"></a>Python tuple delete</h2><p>An element cannot be deleted. You can only create a new tuple without that element.</p>
+<p>If you have this tuple:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>)</span><br></pre></td></tr></table></figure>
+<p>You can create a new one using slicing:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># Create new tuple</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = t[<span class="number">0</span>:<span class="number">1</span>] + t[<span class="number">2</span>:]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>t</span><br><span class="line">(<span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>If you want to change the contents of a tuple (append, delete, modify,…) you should use a <code>list</code> instead.</p>
+<h2 id="Python-tuple-to-list"><a href="#Python-tuple-to-list" class="headerlink" title="Python tuple to list"></a>Python tuple to list</h2><p>To convert a tuple to a list, call the <code>list()</code> function.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># create tuple</span></span><br><span class="line"><span class="meta">... </span>t = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># convert tuple to list</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>mylist = <span class="built_in">list</span>(t)</span><br></pre></td></tr></table></figure>
+<p>If you output mylist, you’ll see its a list:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>mylist</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>You can see the difference between lists and tuples by their parenthesis.</p>
+<ul>
+<li>Tuples use <code>()</code></li>
+<li>lists uses <code>[]</code>.</li>
+</ul>
+<h2 id="Python-list-to-tuple"><a href="#Python-list-to-tuple" class="headerlink" title="Python list to tuple"></a>Python list to tuple</h2><p>A list can be converted to a tuple by calling the <code>tuple()</code> function:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = <span class="built_in">tuple</span>(mylist)</span><br></pre></td></tr></table></figure>
+<p>Variable t is then a tuple:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>t</span><br><span class="line">(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>)</span><br></pre></td></tr></table></figure>
+<p>If you are a Python beginner, <a target="_blank" href="https://gum.co/dcsp" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python book');">then I highly recommend this book.</a></p>
+<p><a rel="external nofollow" target="_blank" href="https://gum.co/dcsp" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Download exercises</a></p>
+
+<!--     </section> -->
+</section></article>
+
+
+          <!--Contact-->
+     <section id="contact" class="section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="header-section text-center">
+              <h2>Contact Us</h2>
+              <p>For more information Contact Us</p>
+              <hr class="bottom-line">
+            </div>
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="col-md-6 col-sm-6 col-xs-12 left">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+              </div>
+  
+              <div class="col-md-6 col-sm-6 col-xs-12 right">
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required"
+                    data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+              </div>
+  
+              <div class="col-xs-12">
+                <!-- Button -->
+                <button type="submit" id="submit" name="submit"
+                  class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+              </div>
+            </form>
+  
+          </div>
+        </div>
+      </section>
+      <!--/ Contact-->
+      <!--Footer-->
+      <footer id="footer" class="footer">
+        <div class="container text-center">
+  
+          <h3> <a href="Lesson.html">Start Your Free Trial Now!</a> </h3>
+  
+          <form class="mc-trial row">
+            <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
+              <div class=" controls">
+                <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
+              </div>
+            </div>
+            <!-- End email input -->
+            <div class="form-group col-md-3 col-sm-4">
+              <div class=" controls">
+                <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
+              </div>
+            </div>
+            <!-- End email input -->
+            <div class="col-md-2 col-sm-4">
+              <p>
+                <a href="Lesson.html">
+                  <button name="submit" type="submit" class="btn btn-block btn-submit">
+                    Submit <i class="fa fa-arrow-right"></i></button></a>
+              </p>
+            </div>
+          </form>
+          <!-- End newsletter-form -->
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/vasudev.jaiswal.9"><i class="fa fa-twitter fa-fw"></i></a></li>
+            <li><a href="https://www.facebook.com/vasudev.jaiswal.9"><i class="fa fa-facebook fa-fw"></i></a></li>
+            <li><a href="vasujaiswal00@gmail.com"><i class="fa fa-google-plus fa-fw"></i></a></li>
+  
+            <li><a href="https://in.linkedin.com/in/vasudev-jaiswal-440b89192"><i class="fa fa-linkedin fa-fw"></i></a>
+            </li>
+            <li><a href="https://github.com/VasudevJaiswal"><i class="fa fa-github fa-fw"></i></a> </li>
+          </ul>
+          ©2021 Theme Create by Vasudev Jaiswal . @All rights reserved
+  
+        </div>
+      </footer>
+      <!--/ Footer-->
+  
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.easing.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="contactform/contactform.js"></script>
+    </div>
+        
+      
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-67250722-6', 'auto');
+  
+    ga('send', 'pageview', {
+      'dimension2':  'master'
+    });
+  </script>
+    
+</body>
+</html>

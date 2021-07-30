@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Python DEV VASU</title>
+    <meta name="description" content="Python Dev Vasudev Jaiswal ">
+    <meta name="keywords"
+      content="Python Lessons, Python Tutorial , Python, Python in html , Python Vasudev Jaiswal Blog, Vasudev Jaiswal Blog">
+    <meta name="Author" content="Vasudev Jaiswal">
+  
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Python<span>&nbspDev</span><span>&nbspVasu</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+  
+  
+  
+            <li><a href="Lesson.HTML">Courses</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+            <li class="btn-trial"><a href="Lesson.html">Free Trail</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/ Navigation bar--> <br>
+    <!-- Content python  -->
+    
+    <section class="post-content">
+      <h1>Python Variables and Assignment</h1>
+      <p>In this tutorial you will learn about <strong>Python variables</strong>. So far you used constant numbers or literal numbers.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(<span class="number">3.3</span>)</span><br><span class="line"><span class="number">3.3</span></span><br></pre></td></tr></table></figure>
+<p>This is fine for small calculations, but for programs you’ll need variables.</p>
+<p><strong>Related Course:</strong> <a target="_blank" href="https://gum.co/dcsp" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Complete Python Programming Course &amp; Exercises</a></p>
+<h2 id="Variable-assignment"><a href="#Variable-assignment" class="headerlink" title="Variable assignment"></a>Variable assignment</h2><p>You can think of a variable as a name with a value attached. To create a variable, just assign a value.</p>
+<p>To do assignment, use the equal sign (=).</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p>You can read this as ‘x is assigned the value 3’. Once assigned, the variable can be used anywhere in the program.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure>
+<p>If you use the REPL shell, it will output the value directly.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>x</span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p>You can change the value of x anywhere in the program.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">4</span></span><br></pre></td></tr></table></figure>
+<p>Then if you want to use x again, you’ll see the value has changed.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
+<p><img src="img/Python_Var.png" alt="python variable"></p>
+<p><strong>Related Course:</strong> <a target="_blank" href="https://gum.co/dcsp" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Complete Python Programming Course &amp; Exercises</a></p>
+<h2 id="Variable-Types-in-Python"><a href="#Variable-Types-in-Python" class="headerlink" title="Variable Types in Python"></a>Variable Types in Python</h2><p>Python doesn’t require the type of variable to be defined in advance, this is called statically typed.</p>
+<p>In Python, you can just assign a value and Python figures out the type. They can also be redefined.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>y = <span class="string">&quot;hello&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(y)</span><br><span class="line"><span class="string">&#x27;hello&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># redefine y</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>y = <span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(y)</span><br></pre></td></tr></table></figure>
+<p>The type changed here, let’s see that again.</p>
+<p>You can get the type by calling the function <code>type()</code>.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>y = <span class="string">&quot;hello&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">type</span>(y)</span><br><span class="line">&lt;<span class="class"><span class="keyword">class</span> &#x27;<span class="title">str</span>&#x27;&gt;</span></span><br><span class="line"><span class="class">&gt;&gt;&gt; </span></span><br><span class="line">&gt;&gt;&gt; y = 3</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">type</span>(y)</span><br><span class="line">&lt;<span class="class"><span class="keyword">class</span> &#x27;<span class="title">int</span>&#x27;&gt;</span></span><br><span class="line"><span class="class">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>In this example, the variable changed from type <code>str</code> (string) to the type <code>int</code> (integer).</p>
+<ul>
+<li>A <strong>string</strong> type is any <em>text content</em>, from single character to paragraph.</li>
+<li>An <strong>integer</strong> type is any whole number (1,2,3…)</li>
+</ul>
+<p>Python figures out the type on it’s own.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>x = <span class="number">3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>price = <span class="number">5.50</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>word = <span class="string">&quot;hello&quot;</span></span><br></pre></td></tr></table></figure>
+<p>In the example above, we have three variables: x, price and word.</p>
+<p>You can get the type that belongs to each variable by calling <code>type()</code>:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">type</span>(x)</span><br><span class="line">&lt;<span class="class"><span class="keyword">class</span> &#x27;<span class="title">int</span>&#x27;&gt;</span></span><br><span class="line"><span class="class">&gt;&gt;&gt; <span class="title">type</span>(<span class="params">price</span>)</span></span><br><span class="line"><span class="class">&lt;<span class="title">class</span> &#x27;<span class="title">float</span>&#x27;&gt;</span></span><br><span class="line"><span class="class">&gt;&gt;&gt; <span class="title">type</span>(<span class="params">word</span>)</span></span><br><span class="line"><span class="class">&lt;<span class="title">class</span> &#x27;<span class="title">str</span>&#x27;&gt;</span></span><br><span class="line"><span class="class">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>The new type you see here is <em>float</em>, that is any real number (1.333, 2.6)</p>
+<p><strong>Related Course:</strong> <a target="_blank" href="https://gum.co/dcsp" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Complete Python Programming Course &amp; Exercises</a></p>
+<h2 id="Variable-names"><a href="#Variable-names" class="headerlink" title="Variable names"></a>Variable names</h2><p>The variable we used before are short (x,y,price,word).<br>That’s okay, but variable names can be any length and have uppercase, lowercase letters, underscore and digits.</p>
+<p>But, variable names may not contain spaces or special characters (<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5e7f1e">[email&#160;protected]</a>#$%^&amp;*)</p>
+<p>For example, these are valid variable names:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>name = <span class="string">&quot;Alice&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>age = <span class="number">21</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>livesInWashington = <span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(name, age, livesInWashington)</span><br><span class="line">Alice <span class="number">21</span> <span class="literal">True</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>But this is not:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>21_Alice = <span class="string">&quot;Alice&quot;</span></span><br><span class="line">      ^</span><br><span class="line">SyntaxError: invalid token</span><br></pre></td></tr></table></figure>
+<p>That’s because a variable name cannot start with a digit.</p>
+<p>In Python variable names are case sensitive, so these are not the same variable:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>name = <span class="string">&quot;Alice&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>Name = <span class="string">&quot;Bob&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>NAME = <span class="string">&quot;Warren&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(name, Name, NAME)</span><br><span class="line">Alice Bob Warren</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>That’s technically fine, but this can get very confusing. Explicit variable naming is better than implicit. For example,</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>Name = <span class="string">&quot;Alice&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>NameOfFriend = <span class="string">&quot;Bob&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>NameOfDad = <span class="string">&quot;Warren&quot;</span></span><br></pre></td></tr></table></figure>
+<p>In this example camel casing is used, because a space is not allowed in a variable name. In camel casing style, each word starts with an uppercase letter.</p>
+<p>However, camel case is not the only naming convention. The example below shows different styles:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># camel case</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>MyName = <span class="string">&quot;Alice&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># snake case</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>my_name = <span class="string">&quot;alice&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># pascal case</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>myName = <span class="string">&quot;Alice&quot;</span></span><br></pre></td></tr></table></figure>
+<p>Pascal case is similar to camel case, with the difference that the first letter is lower case.</p>
+<p>Any of these naming styles is fine, it’s a matter of personal preference or company policy. Camel case is the most popular style, as it’s often used in Java and C++.</p>
+<h2 id="Reserved-words"><a href="#Reserved-words" class="headerlink" title="Reserved words"></a>Reserved words</h2><p>Python has reserved words, those can not be used as variable names. There is a total of 33 reserved words.</p>
+<p>If you type <code>help(&quot;keywords&quot;)</code> it shows you all words you can’t use as variable names.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">help</span>(<span class="string">&quot;keywords&quot;</span>)</span><br><span class="line"></span><br><span class="line">Here <span class="keyword">is</span> a <span class="built_in">list</span> of the Python keywords.  Enter <span class="built_in">any</span> keyword to get more <span class="built_in">help</span>.</span><br><span class="line"></span><br><span class="line"><span class="literal">False</span>               <span class="class"><span class="keyword">class</span>               <span class="title">from</span>                <span class="title">or</span></span></span><br><span class="line"><span class="class"><span class="title">None</span>                <span class="title">continue</span>            <span class="title">global</span>              <span class="title">pass</span></span></span><br><span class="line"><span class="class"><span class="title">True</span>                <span class="title">def</span>                 <span class="title">if</span>                  <span class="title">raise</span></span></span><br><span class="line"><span class="class"><span class="title">and</span>                 <span class="title">del</span>                 <span class="title">import</span>              <span class="title">return</span></span></span><br><span class="line"><span class="class"><span class="title">as</span>                  <span class="title">elif</span>                <span class="title">in</span>                  <span class="title">try</span></span></span><br><span class="line"><span class="class"><span class="title">assert</span>              <span class="title">else</span>                <span class="title">is</span>                  <span class="title">while</span></span></span><br><span class="line"><span class="class"><span class="title">async</span>               <span class="title">except</span>              <span class="title">lambda</span>              <span class="title">with</span></span></span><br><span class="line"><span class="class"><span class="title">await</span>               <span class="title">finally</span>             <span class="title">nonlocal</span>            <span class="title">yield</span></span></span><br><span class="line"><span class="class"><span class="title">break</span>               <span class="title">for</span>                 <span class="title">not</span>                 </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<h2 id="String-variables"><a href="#String-variables" class="headerlink" title="String variables"></a>String variables</h2><p>You have already seen the string type. If a variable is of the string type, it contains text.<br>There are 3 ways to define a variable of the string type:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">word = <span class="string">&#x27;Hello world&#x27;</span></span><br><span class="line">word = <span class="string">&quot;Hello world&quot;</span></span><br><span class="line">word = <span class="string">&#x27;&#x27;&#x27;Hello world&#x27;&#x27;&#x27;</span> </span><br></pre></td></tr></table></figure>
+<p>Any of these are OK, but the double quote (“) is te most common.</p>
+<h2 id="Operators"><a href="#Operators" class="headerlink" title="Operators"></a>Operators</h2><p>After assignment of variables, you can use them throughout your program. But you can also replace or modify their contents.</p>
+<p>The program below assigns variable x, then modifies it and finally replaces its value.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># increase x by one</span></span><br><span class="line">x = x + <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># replace x</span></span><br><span class="line">x = <span class="number">5</span></span><br></pre></td></tr></table></figure>
+<p>Python supports the operators plus <code>+</code>, minus <code>-</code>, divide <code>/</code> and multiplication <code>*</code> as well as brackets.</p>
+<p><img src="img/python variable01.png" alt="python variable"></p>
+<h2 id="Formatted-strings"><a href="#Formatted-strings" class="headerlink" title="Formatted strings"></a>Formatted strings</h2><p>Variables may be shown on the screen using the print() function. The first output of the program above is simply the raw value of the variables.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">5</span></span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"></span><br><span class="line">y = <span class="number">3</span> * x</span><br><span class="line"><span class="built_in">print</span>(y)</span><br></pre></td></tr></table></figure>
+<p>To output more details, you can use <strong>formatted strings</strong>.</p>
+<p>To create a formatted string, put <code>f</code> in front of the string.  By using brackets <code>&#123;&#125;</code> you can print variables along with text.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># more detailed output</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;x = <span class="subst">&#123;x&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;y = <span class="subst">&#123;y&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p><img src="https://d33wubrfki0l68.cloudfront.net/038badf975de550f20406c2584bb55bf4d38689c/ef59f/wp-content/uploads/2020/02/variables-fstrings.png" alt="python variable formatted string"></p>
+<p>The screenshot shows the output of both default strings and formatted strings.</p>
+<p>If you are a Python beginner, <a target="_blank" href="https://gum.co/dcsp" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python book');">then I highly recommend this book.</a></p>
+<p><a rel="external nofollow" target="_blank" href="https://gum.co/dcsp" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Download exercises</a></p>
+
+<!--     </section> -->
+  </section></article>
+
+
+     <!--Contact-->
+     <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="header-section text-center">
+            <h2>Contact Us</h2>
+            <p>For more information Contact Us</p>
+            <hr class="bottom-line">
+          </div>
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="col-md-6 col-sm-6 col-xs-12 left">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                  data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12 right">
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required"
+                  data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+            </div>
+
+            <div class="col-xs-12">
+              <!-- Button -->
+              <button type="submit" id="submit" name="submit"
+                class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+    <!--/ Contact-->
+    <!--Footer-->
+    <footer id="footer" class="footer">
+      <div class="container text-center">
+
+        <h3> <a href="Lesson.html">Start Your Free Trial Now!</a> </h3>
+
+        <form class="mc-trial row">
+          <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
+            <div class=" controls">
+              <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
+            </div>
+          </div>
+          <!-- End email input -->
+          <div class="form-group col-md-3 col-sm-4">
+            <div class=" controls">
+              <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
+            </div>
+          </div>
+          <!-- End email input -->
+          <div class="col-md-2 col-sm-4">
+            <p>
+              <a href="Lesson.html">
+                <button name="submit" type="submit" class="btn btn-block btn-submit">
+                  Submit <i class="fa fa-arrow-right"></i></button></a>
+            </p>
+          </div>
+        </form>
+        <!-- End newsletter-form -->
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com/vasudev.jaiswal.9"><i class="fa fa-twitter fa-fw"></i></a></li>
+          <li><a href="https://www.facebook.com/vasudev.jaiswal.9"><i class="fa fa-facebook fa-fw"></i></a></li>
+          <li><a href="vasujaiswal00@gmail.com"><i class="fa fa-google-plus fa-fw"></i></a></li>
+
+          <li><a href="https://in.linkedin.com/in/vasudev-jaiswal-440b89192"><i class="fa fa-linkedin fa-fw"></i></a>
+          </li>
+          <li><a href="https://github.com/VasudevJaiswal"><i class="fa fa-github fa-fw"></i></a> </li>
+        </ul>
+        ©2021 Theme Create by Vasudev Jaiswal . @All rights reserved
+
+      </div>
+    </footer>
+    <!--/ Footer-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+  </div>
+      
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67250722-6', 'auto');
+
+  ga('send', 'pageview', {
+    'dimension2':  'master'
+  });
+</script>
+    
+</body>
+</html>

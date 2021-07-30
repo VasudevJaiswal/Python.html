@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Python DEV VASU</title>
+  <meta name="description" content="Python Dev Vasudev Jaiswal ">
+  <meta name="keywords"
+    content="Python Lessons, Python Tutorial , Python, Python in html , Python Vasudev Jaiswal Blog, Vasudev Jaiswal Blog">
+  <meta name="Author" content="Vasudev Jaiswal">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Python<span>&nbspDev</span><span>&nbspVasu</span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+
+
+
+          <li><a href="Lesson.HTML">Courses</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+          <li class="btn-trial"><a href="Lesson.html">Free Trail</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Navigation bar-->
+  <br>
+
+  <section class="post-content">
+      <h1>REPL - Python Interactive Shell</h1>
+    <p>What is <strong>REPL</strong>? REPL is the language shell, <strong>the Python Interactive Shell</strong>. The REPL acronym is short for Read, Eval, Print and Loop.</p>
+<p>The Python interactive interpreter can be used to easily check Python commands. To start the Python interpreter, type the command <code>python</code> without any parameter and hit the “return” key.</p>
+<p>The process is:</p>
+<ol>
+<li><strong>Read:</strong> take user input.</li>
+<li><strong>Eval:</strong> evaluate the input.</li>
+<li><strong>Print:</strong> shows the output to the user.</li>
+<li><strong>Loop:</strong> repeat.</li>
+</ol>
+<p><strong>Related Course:</strong> <a target="_blank" href="https://gum.co/dcsp" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Complete Python Programming Course &amp; Exercises</a></p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>You can check the version of Python you have installed by typing <code>python</code> without pressing enter, instead pressing the tab key. This will return the Python versions installed on your computer</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">➜  ~ python</span><br><span class="line">python              python2.7           python3.7           python3.7m          python3-config      python3m            python3-pasteurize</span><br><span class="line">python2             python3             python3.7-config    python3.7m-config   python3-futurize    python3m-config     python3-wsdump    </span><br></pre></td></tr></table></figure>
+<p>To get more details on the version, you can type the command:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python --version</span><br></pre></td></tr></table></figure>
+<p>You should be using Python 3 or newer (2 is legacy).</p>
+<h2 id="REPL"><a href="#REPL" class="headerlink" title="REPL"></a>REPL</h2><blockquote>
+<p>REPL is the Interactive shell</p>
+</blockquote>
+<p>To start the Python language shell (the interactive shell), first open a terminal or command prompt. Then type the command <code>python</code> and press enter. </p>
+<p>Python then outputs some information like this (including the Python version):</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">$ python </span><br><span class="line">Python <span class="number">3.7</span><span class="number">.5</span> (default, Nov <span class="number">20</span> <span class="number">2019</span>, 09:<span class="number">21</span>:<span class="number">52</span>) </span><br><span class="line">[GCC <span class="number">9.2</span><span class="number">.1</span> <span class="number">20191008</span>] on linux</span><br><span class="line"><span class="type">Type</span> <span class="string">&quot;help&quot;</span>, <span class="string">&quot;copyright&quot;</span>, <span class="string">&quot;credits&quot;</span> <span class="keyword">or</span> <span class="string">&quot;license&quot;</span> <span class="keyword">for</span> more information.</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>After the symbols <code>&gt;&gt;&gt;</code> you can type a line of Python code, or a command.</p>
+<p>Each command at the prompt is evaluated by Python. If you would type, if it’s incorrect it returns an error.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>hello world</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">1</span></span><br><span class="line">    hello world</span><br><span class="line">              ^</span><br><span class="line">SyntaxError: invalid syntax</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>In the above example it’s incorrect because text must be between quotes.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">&quot;hello world&quot;</span></span><br><span class="line"><span class="string">&#x27;hello world&#x27;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<picture>
+<source srcset="https://d33wubrfki0l68.cloudfront.net/5c00d8806016b2f6523b6fbb77b54513beaf9240/47ed5/wp-content/2019/03/python-repl.png.webp" type="image/webp">
+<source srcset="https://d33wubrfki0l68.cloudfront.net/79f47dd0f964a2d87fbc3c58b8ba7aec239cb820/65fd0/wp-content/2019/03/python-repl.png" type="image/jpeg"> 
+<img src="https://d33wubrfki0l68.cloudfront.net/79f47dd0f964a2d87fbc3c58b8ba7aec239cb820/65fd0/wp-content/2019/03/python-repl.png" alt="python interactive shell repl">
+</picture>
+<blockquote><p>On some versions of Ubuntu you need type python3 instead of python.</p>
+</blockquote>
+<p>You can type all kinds of commands in the interactive shell. If you want to use it as calculator, just type your calculation:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">128</span> / <span class="number">8</span></span><br><span class="line"><span class="number">16.0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">256</span> * <span class="number">4</span></span><br><span class="line"><span class="number">1024</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>Variables can be used in the Python shell too:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>width = <span class="number">10</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>height = <span class="number">20</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>size = width*height</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(size)</span><br><span class="line"><span class="number">200</span></span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+<blockquote><p><strong>Note:</strong> We’ll teach you how to start python programs in the next article.</p>
+</blockquote>
+<h2 id="How-to-Quit-the-Python-Shell"><a href="#How-to-Quit-the-Python-Shell" class="headerlink" title="How to Quit the Python Shell"></a>How to Quit the Python Shell</h2><p>If you started the Python interactive shell, you may be wondering how to exit it. There are several ways to quit the Python interactive shell (<strong>REPL</strong>).</p>
+<p>One way is by typing <code>exit()</code>. This is calling the function exit, which is why the brackets in <code>exit()</code> must be written.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>exit()</span><br><span class="line">➜  ~ </span><br></pre></td></tr></table></figure>
+<p>A keyboard shotcut can be used to exit the shell too: <code>Ctrl-D</code>.</p>
+<p>If you are a Python beginner, <a target="_blank" href="https://gum.co/dcsp" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python book');">then I highly recommend this book.</a></p>
+<p><a rel="external nofollow" target="_blank" href="https://gum.co/dcsp" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Download exercises</a></p>
+
+<!--     </section> -->
+</section></article>
+     <!--Contact-->
+     <section id="contact" class="section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="header-section text-center">
+              <h2>Contact Us</h2>
+              <p>For more information Contact Us</p>
+              <hr class="bottom-line">
+            </div>
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="col-md-6 col-sm-6 col-xs-12 left">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12 right">
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required"
+                    data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                <!-- Button -->
+                <button type="submit" id="submit" name="submit"
+                  class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </section>
+      <!--/ Contact-->
+      <!--Footer-->
+      <footer id="footer" class="footer">
+        <div class="container text-center">
+
+          <h3> <a href="Lesson.HTML">Start Your Free Trial Now!</a> </h3>
+
+          <form class="mc-trial row">
+            <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
+              <div class=" controls">
+                <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
+              </div>
+            </div>
+            <!-- End email input -->
+            <div class="form-group col-md-3 col-sm-4">
+              <div class=" controls">
+                <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
+              </div>
+            </div>
+            <!-- End email input -->
+            <div class="col-md-2 col-sm-4">
+              <p>
+                <a href="Lesson.html">
+                  <button name="submit" type="submit" class="btn btn-block btn-submit">
+                    Submit <i class="fa fa-arrow-right"></i></button></a>
+              </p>
+            </div>
+          </form>
+          <!-- End newsletter-form -->
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/vasudev.jaiswal.9"><i class="fa fa-twitter fa-fw"></i></a></li>
+            <li><a href="https://www.facebook.com/vasudev.jaiswal.9"><i class="fa fa-facebook fa-fw"></i></a></li>
+            <li><a href="vasujaiswal00@gmail.com"><i class="fa fa-google-plus fa-fw"></i></a></li>
+
+            <li><a href="https://in.linkedin.com/in/vasudev-jaiswal-440b89192"><i class="fa fa-linkedin fa-fw"></i></a>
+            </li>
+            <li><a href="https://github.com/VasudevJaiswal"><i class="fa fa-github fa-fw"></i></a> </li>
+          </ul>
+          ©2021 Theme Create by Vasudev Jaiswal . @All rights reserved
+
+        </div>
+      </footer>
+      <!--/ Footer-->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+        ga('create', 'UA-67250722-6', 'auto');
+    
+        ga('send', 'pageview', {
+          'dimension2':  'master'
+        });
+      </script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.easing.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="contactform/contactform.js"></script>
+    </div>
+</body>
+</html>
