@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Python DEV VASU</title>
+    <meta name="description" content="Python Dev Vasudev Jaiswal ">
+    <meta name="keywords" content="Python Lessons, Python Tutorial , Python, Python in html , Python Vasudev Jaiswal Blog, Vasudev Jaiswal Blog">
+    <meta name="Author" content="Vasudev Jaiswal">
+  
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+  </head>
+  
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Python<span>&nbspDev</span><span>&nbspVasu</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            
+  
+           
+            <li><a href="Lesson.html">Courses</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+            <li class="btn-trial"><a href="Lesson.html">Free Trail</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/ Navigation bar--> <br> <br>
+
+    <!-- Content in Python  -->
+
+    <section class="post-content">
+        <h1>if elif and else in Python</h1>
+        <p>You can create a chain of <a href="https://pythonprogramminglanguage.com/if-statements/">if statements</a> using the keywords <em>elif</em> and <em>else</em>. This is a lot easier to read than having to read ‘if if if’ all over again.</p>
+<p>So using the keywords <em>elif</em> and <em>else</em>. That way, we can walk through all options for the condition. Imagine a weather app: if snow, elif rain, elif thunder, else sunny. We can execute different code for each condition.</p>
+<p><strong>Related Course:</strong> <a target="_blank" href="https://pythondevvasu.tk" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Complete Python Programming Course &amp; Exercises</a></p>
+<h2 id="If-statement"><a href="#If-statement" class="headerlink" title="If statement"></a>If statement</h2><p>Recall that you can create a branch in your code using an if statement, which could be one single code line or a block of code.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> &lt;condition&gt;:</span><br><span class="line">    &lt;run line of code&gt;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> &lt;condition&gt;:</span><br><span class="line">    &lt;line of code&gt;</span><br><span class="line">    &lt;line of code&gt;</span><br><span class="line">    &lt;line of code&gt;</span><br></pre></td></tr></table></figure>
+<p>Instead of block of code, we say branch.</p>
+<p>This creates a branch that is executed based on the condition. If the condition is True, the code is executed. If the condition is False, the code is skipped.</p>
+<p>Each branch is indented with 4 spaces.</p>
+<h2 id="How-to-use-“else-condition”"><a href="#How-to-use-“else-condition”" class="headerlink" title="How to use “else condition”"></a>How to use “else condition”</h2><p>So what if the <code>&lt;condition&gt;</code> is not True?</p>
+<p>The program continues execution.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> &lt;condition&gt;:</span><br><span class="line">    &lt;code&gt;</span><br><span class="line"></span><br><span class="line">&lt;normal code&gt;</span><br></pre></td></tr></table></figure>
+<p>If you want to add a False check, you can add <code>else</code>.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> &lt;condition&gt;:</span><br><span class="line">    &lt;code&gt;</span><br><span class="line"><span class="keyword">else</span>: </span><br><span class="line">    &lt;code&gt;</span><br><span class="line"></span><br><span class="line">code</span><br></pre></td></tr></table></figure>
+<p>if <code>&lt;condition&gt;</code> is <strong>True</strong> it runs the first branch.<br>If <code>&lt;condition&gt;</code> is <strong>False</strong>, it jumps into the second branch. </p>
+<p><strong>Related Course:</strong> <a target="_blank" href="https://pythondevvasu.tk" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Complete Python Programming Course &amp; Exercises</a></p>
+<h2 id="If-elif-and-else"><a href="#If-elif-and-else" class="headerlink" title="If elif and else"></a>If elif and else</h2><p>You can also do that if we have multiple conditions. Instead of doing this:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> x &lt; <span class="number">5</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;x smaller than 5&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> x &gt;= <span class="number">5</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;x is too big&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>You can connect the if statements with the keyword <strong>else</strong>. The example below shows how to do that.<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> x &lt; <span class="number">5</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;x smaller than 5&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;x is too big&#x27;</span>)</span><br></pre></td></tr></table></figure>It will make the decision based on the value of x, also known as the condition. You can run the program using the Python interpreter or in an IDE.</p>
+<picture>
+<source srcset="https://d33wubrfki0l68.cloudfront.net/93cba20fc2698d05ad5243ff008525c1126ccd45/d09a0/wp-content/2019/03/python-if-elif-and-else.png.webp" type="image/webp">
+<source srcset="https://d33wubrfki0l68.cloudfront.net/7119813f5300d8f56de5914b87cd52f92063e1e6/accd7/wp-content/2019/03/python-if-elif-and-else.png" type="image/jpeg"> 
+<img src="https://d33wubrfki0l68.cloudfront.net/7119813f5300d8f56de5914b87cd52f92063e1e6/accd7/wp-content/2019/03/python-if-elif-and-else.png" alt="python if elif and else">
+</picture>
+<p>In the above example there are two branches, each branch has a single line of code (but it can be multiple).</p>
+<p>Because the value of x is 3 <code>x = 3</code> it jumps into the first branch and then exists. If you change the value of x to be greater or equal to five, it will jump in the second branch.</p>
+<p>After completion of the if statement it will continue executing the program in the normal flow.</p>
+<h2 id="When-“else-condition”-does-not-work"><a href="#When-“else-condition”-does-not-work" class="headerlink" title="When “else condition” does not work"></a>When “else condition” does not work</h2><p>It may be that the <code>else</code> doesn’t give the desired result. For instance, in this program:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">5</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> x &lt; <span class="number">5</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;x smaller than 5&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;x is larger than 5&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>In this case the value of x is equal to five. </p>
+<p>To correct this you can add an equality check (<code>==</code>) by adding the <code>elif</code> clause which we will talk about more in the next section.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>x = <span class="number">5</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> x &lt; <span class="number">5</span>:</span><br><span class="line"><span class="meta">... </span>    <span class="built_in">print</span>(<span class="string">&#x27;x smaller than five&#x27;</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">elif</span> x == <span class="number">5</span>:</span><br><span class="line"><span class="meta">... </span>    <span class="built_in">print</span>(<span class="string">&#x27;x equal to five&#x27;</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">else</span>:</span><br><span class="line"><span class="meta">... </span>    <span class="built_in">print</span>(<span class="string">&#x27;x is larger than five&#x27;</span>)</span><br><span class="line"><span class="meta">... </span></span><br></pre></td></tr></table></figure>
+<h2 id="How-to-use-“elif”-condition"><a href="#How-to-use-“elif”-condition" class="headerlink" title="How to use “elif” condition"></a>How to use “elif” condition</h2><p>You can test multiple conditions by using <code>elif</code>. </p>
+<ul>
+<li>First define the default condition</li>
+<li>then add as many other test conditions you want by adding <code>elif</code>.</li>
+</ul>
+<p>Each if code should be indentend with four spaces. The if codes body ends when the four spaces are removed again.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>x = <span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> x &gt; <span class="number">10</span>: </span><br><span class="line"><span class="meta">... </span>    <span class="built_in">print</span>(<span class="string">&#x27;x &gt; 10&#x27;</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">elif</span> x &gt; <span class="number">5</span>:</span><br><span class="line"><span class="meta">... </span>    <span class="built_in">print</span>(<span class="string">&#x27;x &gt; 5&#x27;</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">elif</span> x &gt; <span class="number">0</span>:</span><br><span class="line"><span class="meta">... </span>    <span class="built_in">print</span>(<span class="string">&#x27;x &gt; 0&#x27;</span>)</span><br><span class="line"><span class="meta">... </span></span><br></pre></td></tr></table></figure>
+<p>This can be as long as you want. You can keep adding the conditions you need.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> x &gt; <span class="number">10</span>:</span><br><span class="line"><span class="meta">... </span>    <span class="built_in">print</span>(<span class="string">&#x27;greater than ten&#x27;</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">elif</span> x &gt; <span class="number">9</span>:</span><br><span class="line"><span class="meta">... </span>    <span class="built_in">print</span>(<span class="string">&#x27;greater than nine&#x27;</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">elif</span> x &gt; <span class="number">8</span>:</span><br><span class="line"><span class="meta">... </span>    <span class="built_in">print</span>(<span class="string">&#x27;greater than eight&#x27;</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">elif</span> x &gt; <span class="number">7</span>:</span><br><span class="line"><span class="meta">... </span>    <span class="built_in">print</span>(<span class="string">&#x27;greater than seven&#x27;</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">elif</span> x &gt; <span class="number">6</span>:</span><br><span class="line"><span class="meta">... </span>    <span class="built_in">print</span>(<span class="string">&#x27;greater than six&#x27;</span>)</span><br><span class="line"><span class="meta">... </span><span class="keyword">elif</span> x &gt; <span class="number">5</span>:</span><br><span class="line"><span class="meta">... </span>    <span class="built_in">print</span>(<span class="string">&#x27;greater than five&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>Like the example above. You can optionally add another <code>else</code> to the end of the list.</p>
+<p><strong>Related Course:</strong> <a target="_blank" href="https://pythondevvasu.tk" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Complete Python Programming Course &amp; Exercises</a></p>
+<h2 id="Switch-statement"><a href="#Switch-statement" class="headerlink" title="Switch statement"></a>Switch statement</h2><p>Instead of having a long list of <code>elif</code>, many programming languages allow you to use a <code>switch</code> statement.</p>
+<p>For instance, in Java you can do this:</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(argument) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;x is zero&quot;</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;x is one&quot;</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;x is two &quot;</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;nothing&quot;</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>This is a lot cleaner than a long list of <code>elif</code> cases. But,</p>
+<p><em>Python does not have a switch statement</em>.</p>
+<p>Instead you can use a <a href="https://pythonprogramminglanguage.com/dictionary/">dictionary</a>. </p>
+<blockquote>
+<p>Please note that this is a trick, and a normal <em>if</em> statement or <em>elif</em> cases are preferred.</p>
+</blockquote>
+<p>The example below defines a function with a dictionary in it. By calling the function with a parameter, it simulates a switch statement.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>  </span><br><span class="line"><span class="meta">... </span><span class="function"><span class="keyword">def</span> <span class="title">SwitchDemo</span>(<span class="params">argument</span>):</span></span><br><span class="line"><span class="meta">... </span>   switcher = &#123;</span><br><span class="line"><span class="meta">... </span>       <span class="number">0</span>: <span class="string">&quot;x is zero&quot;</span>,</span><br><span class="line"><span class="meta">... </span>       <span class="number">1</span>: <span class="string">&quot;x is one&quot;</span>,</span><br><span class="line"><span class="meta">... </span>       <span class="number">2</span>: <span class="string">&quot;x is two&quot;</span>,</span><br><span class="line"><span class="meta">... </span>       <span class="number">3</span>: <span class="string">&quot;x is three&quot;</span>,</span><br><span class="line"><span class="meta">... </span>       <span class="number">4</span>: <span class="string">&quot;x is four&quot;</span>,</span><br><span class="line"><span class="meta">... </span>   &#125;</span><br><span class="line"><span class="meta">... </span>   <span class="keyword">return</span> switcher.get(argument, <span class="string">&quot;&quot;</span>)</span><br><span class="line"><span class="meta">... </span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>x = <span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(SwitchDemo(x))</span><br><span class="line">x <span class="keyword">is</span> two</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>This works, but does not let you check greater than <code>&gt;</code>, smaller than <code>&lt;</code>, greater or equal <code>&gt;=</code> and other conditions.</p>
+<p>In general it’s better to use <code>if</code> statements combined with <code>elif</code> and <code>else</code>.</p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>In this article we talked about <code>else</code> and <code>elif</code> clauses, which test other for other conditions.</p>
+<ul>
+<li><p><code>if</code> tests the default condition (is <strong>True</strong>?)</p>
+</li>
+<li><p>Each branch must have 4 spaces</p>
+</li>
+<li><p>code is only executed if a condition is <strong>True</strong></p>
+</li>
+<li><p><code>else</code> tests if the default condition(s) are <strong>False</strong></p>
+</li>
+<li><p><code>elif</code> tests multiple conditions</p>
+</li>
+<li><p>Python does not have a switch statement, but it can be simulated</p>
+</li>
+</ul>
+<p>If you are a Python beginner, <a target="_blank" href="https://pythondevvasu.tk" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python book');">then I highly recommend this book.</a></p>
+<p><a rel="external nofollow" target="_blank" href="https://pythondevvasu.tk" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Download exercises</a></p>
+
+ <!--     </section> -->
+    </section></article>
+
+      <!--Contact-->
+      <section id="contact" class="section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="header-section text-center">
+              <h2>Contact Us</h2>
+              <p>For more information Contact Us</p>
+              <hr class="bottom-line">
+            </div>
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="col-md-6 col-sm-6 col-xs-12 left">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12 right">
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required"
+                    data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                <!-- Button -->
+                <button type="submit" id="submit" name="submit"
+                  class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </section>
+      <!--/ Contact-->
+      <!--Footer-->
+      <footer id="footer" class="footer">
+        <div class="container text-center">
+
+          <h3> <a href="Lesson.HTML">Start Your Free Trial Now!</a> </h3>
+
+          <form class="mc-trial row">
+            <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
+              <div class=" controls">
+                <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
+              </div>
+            </div>
+            <!-- End email input -->
+            <div class="form-group col-md-3 col-sm-4">
+              <div class=" controls">
+                <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
+              </div>
+            </div>
+            <!-- End email input -->
+            <div class="col-md-2 col-sm-4">
+              <p>
+                <a href="Lesson.HTML">
+                  <button name="submit" type="submit" class="btn btn-block btn-submit">
+                    Submit <i class="fa fa-arrow-right"></i></button></a>
+              </p>
+            </div>
+          </form>
+          <!-- End newsletter-form -->
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/vasudev.jaiswal.9"><i class="fa fa-twitter fa-fw"></i></a></li>
+            <li><a href="https://www.facebook.com/vasudev.jaiswal.9"><i class="fa fa-facebook fa-fw"></i></a></li>
+            <li><a href="vasujaiswal00@gmail.com"><i class="fa fa-google-plus fa-fw"></i></a></li>
+
+            <li><a href="https://in.linkedin.com/in/vasudev-jaiswal-440b89192"><i class="fa fa-linkedin fa-fw"></i></a>
+              
+            </li>
+            <li><a href="https://github.com/VasudevJaiswal"><i class="fa fa-github fa-fw"></i></a> </li>
+          </ul>
+          ©2021 Theme Create by Vasudev Jaiswal . @All rights reserved
+
+        </div>
+      </footer>
+      <!--/ Footer-->
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.easing.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="contactform/contactform.js"></script>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+        ga('create', 'UA-67250722-6', 'auto');
+    
+        ga('send', 'pageview', {
+          'dimension2':  'master'
+        });
+      </script>
+      
+    </div>
+
+        
+</body>
+</html>
