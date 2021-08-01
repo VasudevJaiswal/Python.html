@@ -1,0 +1,27 @@
+          Python - 0                      Python-Basic syntax
+
+*** The Python language has many similarities to Perl,C, and Java However, there
+are same definits diffrence between the language.
+
+       @  Execute Python Syntax::
+
+# As well we learned in the previous page, Python syntax can be executed by
+writing directly in the command Line.
+
+>>> Print("Hello World!")
+Output = Hello World !
+
+       @  Python Indentifiers ::
+
+# A  Python Indentifie is a name used to identify a variable , function, class, modules
+or other object 
+
+# An Indentifier starts with a letter A to Z or a to z or an Underscore (_)
+followed by zero or more letters and digits (0-9) 
+
+
+ @ Notes :
+
+ 1. Python doesn't allow punctuation characters such as @ , & and  % wethir Indentifiers.
+ 2. Python is #CASE-SENSITIVE Programming language . Thus < Manpower , manpower >
+ are two different Indentifiers in Python

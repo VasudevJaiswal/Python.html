@@ -1,0 +1,15 @@
+ Chapter - 0                  Python - Syntax (Reserved Words)
+
+# These are Reserved Words and you cannot use them as a  constant or variables or 
+any other Indentifier names.
+             # All the Python  Keywords contain Lowrecase Letters Only .
+
+
+     and           elif          if
+     as            else          import
+     assert        except         
+     break         exec
+     class         finally
+     continue      for 
+     def           from 
+     del           global
