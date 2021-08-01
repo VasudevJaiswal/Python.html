@@ -1,0 +1,6 @@
+  Python - Variables Types        DataTypes - Lists 
+
+  # Lists are the versatile of Python's compound date types . A list contains items
+  separate by commas and enclosed with square brackets ([ ]) . 
+  
+  #Lists are Similar to arrays in C . 
