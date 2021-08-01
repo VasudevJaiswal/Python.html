@@ -1,0 +1,19 @@
+       Chapter -1             Python - Variables Types
+
+# Variables are nothing but Reserved memory locations to #Store Values  .
+It means that when we create a variable , We Reserve some space in memory 
+
+
+        @ Assigning Values to Variables ::
+
+# Python variables do not need explicit declaration to Reserve memory space.
+The declaration happens automatically when you assign a value to a variable.
+
+   # The equal sign (=) is used to assign values to variables .
+
+Exp:: 
+
+     1. Counter = 100     #An Integer Assignment
+     2. miles = 1000.23   #An Floating points
+     3. name = "Vasudev"  #An String Assignment
+     4. age = 19          #An Integer Assignment
