@@ -3,7 +3,7 @@
  #  Python is high-level , interpreted , enteractive and object scripting language.
  Python is designed to be highly readable.
 
-                        History - Of Python
+                         @ History - Of Python
 
 # Python was developed by Guido van Rossum in the late eighties and early nineties
 at the National Research Institute for Mathmatices and Computer Science in the 
