@@ -5,11 +5,11 @@ any other Indentifier names.
              # All the Python  Keywords contain Lowrecase Letters Only .
 
 
-     and           elif          if
-     as            else          import
-     assert        except         
-     break         exec
-     class         finally
-     continue      for 
-     def           from 
-     del           global
+     and           elif          if            Print
+     as            else          import        raise 
+     assert        except        in            return
+     break         exec          is            try
+     class         finally       lambda        while
+     continue      for           Not           with
+     def           from          or            yield
+     del           global        pass
