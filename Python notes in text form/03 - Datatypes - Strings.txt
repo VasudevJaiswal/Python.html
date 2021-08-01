@@ -1,0 +1,20 @@
+     Python - Strings              DataTypes - Strings
+
+# Strings in Python are can identified as a contiguaus set of character
+represented in the quation marks. Python allows for either pairs fo single and
+double quotes.
+
+1. Subsets of Strings can be taken using Slice operators ([] and [:]) with indexs starting 
+at 0 in the beginning of the string and working their way from -1 at the end .
+
+2. The Plus + sign is the string concatenation operator and the asterisk (*) is the 
+repetition operators .
+
+Exp :-     
+             str = " Hello World!"
+             print(str)          #Print Complete String
+             print(str[0])       #Print @H First character 
+             print(str[2:5])     #Print @llo character 3rd to 5th 
+             print(str[2:])      #Print @llo World!  starting from 3
+             print(str*2)        #Print strings two times 
+             print(str + "TEST") #print concatenated
