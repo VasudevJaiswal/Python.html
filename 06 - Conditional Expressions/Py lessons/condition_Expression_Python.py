@@ -41,3 +41,15 @@ elif(var=18):
     print("You are Eligible for drink")
 else:
     print("You are not Eligible for drink")
+
+# Multiple If Statements  - Nested If statements 
+
+let a = int(intput("Enter yuor Integers"))
+if a>5:
+    print("true")
+if a>7:
+    print("false")
+if a>10:
+    print("true")
+else:
+    print("false")
