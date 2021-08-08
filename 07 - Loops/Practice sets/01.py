@@ -7,10 +7,7 @@ while i<=50:
     i = i+1
 
 
-'''Quick Quiz: 
-Write a program to print the content of a list using while loops.'''
-
-
+'''Quick Quiz: Write a program to print the content of a list using while loops.'''
 fruits = ['Banana','Watermelon','graps','Mangoes','Apples']
 i = 0
 while i<len(fruits):
