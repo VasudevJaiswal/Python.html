@@ -1,0 +1,56 @@
+                        Python - Overview
+
+ #  Python is high-level , interpreted , enteractive and object scripting language.
+ Python is designed to be highly readable.
+
+                         @ History - Of Python
+
+# Python was developed by Guido van Rossum in the late eighties and early nineties
+at the National Research Institute for Mathmatices and Computer Science in the 
+Netherlands.
+
+1. Python = (1.0) - 1994
+2. Python = (2.0) - 2000
+3. Python = (3.0) - 2008
+
+                         Python - Features
+                        
+@ Easy to Learn : 
+Python has few keywords simple structure , and a clearly defined 
+syntax
+
+@ Easy to read : 
+Python code is clearly defined and visible to the eyes.
+
+@ A board standard Library : 
+Python's Bulk of the Library is very portable and cross
+-platform compatible on UNIX, Window and Macintesh
+
+@ Interactive Mode : 
+Python has support of an Interactive mode, which allows Interactive
+testing and debugging of snippets of code.
+
+@ Extendable : 
+You can add low-level modules to the Python interpreter . These 
+modules enables programmers to add to customize their tool to be more efficient .
+
+@ Database : 
+Python provides interfaces to all major commercial language .
+
+@ GUI Programming : 
+Python supports GUI applications that can be created and parted to many syntax cells
+, libaries and windows systems, such as Windows MFC, Macintash and the X system 
+of UNIX . 
+
+@ Scalable : 
+Python provides a better structure and support for large programs than shell
+scripting.
+
+@ Notes:
+
+1. It can easily integrated C, C++ , COM, Active X , CORBA , Java.
+
+2. It supports automatic , garbage collection. 
+
+3. It provides very high-level dynamic data types and supports dynamic type 
+checking . 

@@ -1,0 +1,27 @@
+        Chapter 03   -        DataTypes -  Numbers
+
+# Numbers data types numeric values . Number object are created when 
+assign a value to them. 
+
+ For example ::
+   var1 = 1
+   var2 = 10
+
+@  Here are some examples of numbers
+        
+        int          float          complex
+        
+        10           0.0            3.14j
+        
+        100          15.20          45.j
+        
+       -786          -21.9          9.322e-36j
+        
+        080          32.3+e18       .876j
+        
+        -0490        -90.           -.6545+0J
+        
+        -0x260      -32.54e100      3e+26J
+        
+        0x69         70.2-E12       4.53e-7j
+        

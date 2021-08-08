@@ -1,0 +1,26 @@
+  Python - Variables Types        DataTypes - Lists 
+
+  # Lists are the versatile of Python's compound date types . A list contains items
+  separate by commas and enclosed with square brackets ([ ]) . 
+
+  #Lists are Similar to arrays in C . 
+
+  Exp -
+
+              list  = ['abcd' , 786, 2.23, "vasudev" , 70.2 ]
+              List2 = [123, "Jaiswal"]
+              print(list)        #Print Complete List
+              print(list[0])     #print First Element
+              print(list[1:3])   #Print starting from 2nd to Till 3rd 
+              print(list[2:])    #Print starting from 3rd
+              print(list *2)     #Print Two Lines 
+              print(list + List2)
+
+
+              Output :-
+              ['abcd', 786, 2.23, "vasudev", 70.200000000000003]
+              abcd
+              [786, 2.23]
+              [2.23, 'john', 70.200000000000003]
+              [123, "vasudev", 123, "vasudev"]
+              ['abcd', 786, 2.23, "vasudev", 70.200000000000003, 123, 'john'

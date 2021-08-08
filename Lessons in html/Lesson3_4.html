@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Python DEV VASU</title>
+    <meta name="description" content="Python Dev Vasudev Jaiswal ">
+    <meta name="keywords" content="Python Lessons, Python Tutorial , Python, Python in html , Python Vasudev Jaiswal Blog, Vasudev Jaiswal Blog">
+    <meta name="Author" content="Vasudev Jaiswal">
+  
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+  </head>
+  
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Python<span>&nbspDev</span><span>&nbspVasu</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            
+  
+           
+            <li><a href="Lesson.html">Courses</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+            <li class="btn-trial"><a href="Lesson.html">Free Trail</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/ Navigation bar--> <br> <br>
+
+    <!-- Content in Python  -->
+    <section class="post-content">
+        <h1>Python Functions </h1>
+        <p>If you want to <u>reuse code</u>, you can use a function.</p>
+<p>This prevents you from writing the same thing <em>over and over again.</em></p>
+<p>A function has a unique distinct name in the program. Once you call a function it will execute one or more lines of codes, which we will call a <em>code block</em>. </p>
+<p><strong>Related Course: </strong>  <a target="_blank" href="https://pythondevvasu.tk" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Complete Python Programming Course &amp; Exercises</a></p>
+<h2 id="What-are-Functions"><a href="#What-are-Functions" class="headerlink" title="What are Functions?"></a>What are Functions?</h2><p>A function is code. You can use functions to divide your program in “blocks of code”. This makes your code more readable and your life easier. You have likely already used one or more functions, such as the print function:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello world&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>A function can be called more than once:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Coffee&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Tea&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Sugar&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="Python-Function"><a href="#Python-Function" class="headerlink" title="Python Function"></a>Python Function</h2><p>The syntax for making a Python function is:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> &lt;<span class="title">function_name</span>&gt;(<span class="params">[&lt;parameters&gt;]</span>):</span></span><br><span class="line">    &lt;statement(s)</span><br></pre></td></tr></table></figure>
+<p>The meaning is:</p>
+<ul>
+<li><p><code>def</code> tells Python you want to create a function</p>
+</li>
+<li><p><code>function_name</code> is the identifier, it must be unique</p>
+</li>
+<li><p><code>parameters</code> optional list of parameters that can be passed in the function</p>
+</li>
+<li><p><code>:</code> end of function header</p>
+</li>
+<li><p><code>&lt;statement(s)</code>  lines of code. This is called the function <strong>body</strong>. It must have four space indention.</p>
+</li>
+</ul>
+<p>It’s possible to create both simple and complex functions.<br>Start with a small example, we define a function <code>f()</code> and call it:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span>():</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;function body&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Call function</span></span><br><span class="line">f()</span><br></pre></td></tr></table></figure>
+<p>A function can be called as many times as you want, so this is possible:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">f()</span><br><span class="line">f()</span><br><span class="line">f()</span><br></pre></td></tr></table></figure>
+<p>A function <strong>body</strong> can have many lines of code:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span>():</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Dear Java&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Hows that JRE coming along?&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Your sincerly,&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Python&quot;</span>)</span><br><span class="line"></span><br><span class="line">hello()</span><br></pre></td></tr></table></figure>
+<p><img src="https://d33wubrfki0l68.cloudfront.net/a5222d45b61fb84327ea12fdce2fa8ec3a23e3d4/08ee2/wp-content/uploads/2020/02/python-function.png" alt="python function"></p>
+<p>If you are a Python beginner, <a target="_blank" href="https://pythondevvasu.tk" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python book');">then I highly recommend this book.</a></p>
+<h2 id="Function-parameters"><a href="#Function-parameters" class="headerlink" title="Function parameters"></a>Function parameters</h2><p>Functions can take <strong>arguments</strong>. They are positional, the order should remain the same.</p>
+<p>The example below takes a single argument:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span>(<span class="params">name</span>):</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Good&#x27;day &quot;</span> + name)</span><br><span class="line"></span><br><span class="line">hello(<span class="string">&quot;Alice&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>To take multiple arguments, add a comma between each of them.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">name,salary</span>):</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;name&#125;</span> has $<span class="subst">&#123;salary&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>Then you can call it like this:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">f(<span class="string">&quot;Alice&quot;</span>,<span class="number">80000</span>)</span><br></pre></td></tr></table></figure>
+<p>The function parameters in the function call must remain in the same order as the definition.<br>If you have this function:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">a,b,c</span>):</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+<p>Then you must call the function as <code>f(a,b,c)</code> not <code>f(a,c,b)</code> or <code>f(c,b,a)</code>.<br>They must be the same <strong>number</strong> of parameters. So not <code>f(a,b)</code> or <code>f(a,b,c,d)</code>.</p>
+<p>The <code>pass</code> statement is an empty function body.</p>
+<h2 id="Default-parameters"><a href="#Default-parameters" class="headerlink" title="Default parameters"></a>Default parameters</h2><p>You can set a <strong>default parameter</strong>. This is set when you don’t define any argument.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>f(<span class="number">6</span>)</span><br><span class="line"><span class="number">6</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f(<span class="number">7</span>)</span><br><span class="line"><span class="number">7</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># prints default value</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f()</span><br><span class="line"><span class="number">5</span></span><br></pre></td></tr></table></figure>
+<p>If you have multiple parameters, the same idea is true:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">x=<span class="number">5</span>,y=<span class="number">4</span></span>):</span></span><br><span class="line"><span class="meta">... </span>    <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;x&#125;</span> <span class="subst">&#123;y&#125;</span>&quot;</span>)</span><br><span class="line"><span class="meta">... </span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f()</span><br><span class="line"><span class="number">5</span> <span class="number">4</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f(<span class="number">3</span>)</span><br><span class="line"><span class="number">3</span> <span class="number">4</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f(<span class="number">10</span>,<span class="number">10</span>)</span><br><span class="line"><span class="number">10</span> <span class="number">10</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<h2 id="Function-scope"><a href="#Function-scope" class="headerlink" title="Function scope"></a>Function scope</h2><p>Variables you create in the <strong>function body</strong> only exist within it.</p>
+<p>If you create a function with a variable inside it:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">f</span>():</span></span><br><span class="line"><span class="meta">... </span>    x = <span class="number">5</span></span><br></pre></td></tr></table></figure>
+<p>Then that variable can only be accessed within the <strong>function body</strong>.</p>
+<p>If you try to access it outside the function body, it will throw an error:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(x)</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">NameError: name <span class="string">&#x27;x&#x27;</span> <span class="keyword">is</span> <span class="keyword">not</span> defined</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+<p>So <strong>function variables</strong> live inside the <strong>function body</strong>.</p>
+<p>If you want to use the function variable in your program, you must use <strong>return</strong>.</p>
+<h2 id="Return-value"><a href="#Return-value" class="headerlink" title="Return value"></a>Return value</h2><p>It is also possible to store the output of a function in a variable.  To do so, we use the keyword <strong>return</strong>.</p>
+<p>The function <code>sum(a,b)</code> <strong>returns</strong> the output.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">sum</span>(<span class="params">a,b</span>):</span></span><br><span class="line"><span class="meta">... </span>    x = a + b</span><br><span class="line"><span class="meta">... </span>    <span class="keyword">return</span> x</span><br><span class="line"><span class="meta">... </span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>cost = <span class="built_in">sum</span>(<span class="number">100</span>,<span class="number">60</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(cost)</span><br><span class="line"><span class="number">160</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>Without the <strong>return</strong> statement, variable x would only exist within the <strong>function body</strong>. The variable name need not be the same, in this case we store the output as variable <em>cost</em>.</p>
+<p><img src="https://d33wubrfki0l68.cloudfront.net/0dd3904ebb1fd2ac572eb2820dac0b3e49a89513/21df3/wp-content/uploads/2020/02/function-return.png" alt="python function return variable"></p>
+<p>A function can return more than one variable:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">a,b,c</span>):</span></span><br><span class="line"><span class="meta">... </span>    <span class="keyword">return</span> a,b,c</span><br><span class="line"><span class="meta">... </span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>x,y,z = f(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>x</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>y</span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>z</span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<h2 id="Variable-Length-Argument-Lists"><a href="#Variable-Length-Argument-Lists" class="headerlink" title="Variable-Length Argument Lists"></a>Variable-Length Argument Lists</h2><p>By default, Python functions take a fixed number of <strong>arguments</strong>. That is fine for most functions, but sometimes you want the number of arguments to be of variable length.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># takes 2 arguments</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">a,b</span>):</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># takes 3 arguments</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">a,b,c</span>):</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># takes 4 arguments</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">a,b,c,d</span>):</span></span><br></pre></td></tr></table></figure>
+<p>So you must call the function with the same number of arguments.<br>What if you want a <strong>variable-length</strong>?</p>
+<p>Then you can use a list:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">x</span>):</span></span><br><span class="line"><span class="meta">... </span>    <span class="keyword">for</span> item <span class="keyword">in</span> x:</span><br><span class="line"><span class="meta">... </span>        <span class="built_in">print</span>(item)</span><br></pre></td></tr></table></figure>
+<p>This gives you the freedom to call it with any “number of parameters”:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>f([<span class="number">1</span>])</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f([<span class="number">1</span>,<span class="number">2</span>])</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>f([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>])</span><br></pre></td></tr></table></figure>
+<h2 id="Docstring"><a href="#Docstring" class="headerlink" title="Docstring"></a>Docstring</h2><p>You can add documentation to your function. The first string after the function header is the documentation string. You can output it with the <code>__doc__</code> attribute.</p>
+<p>This way you can request what a function does:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(<span class="built_in">print</span>.__doc__)</span><br><span class="line">...</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(<span class="built_in">dir</span>.__doc__)</span><br></pre></td></tr></table></figure>
+<p>If you want to create your own <strong>docstring</strong> you can do this:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">hello</span>():</span></span><br><span class="line"><span class="meta">... </span>   <span class="string">&quot;&quot;&quot;This function prints hello world&quot;&quot;&quot;</span></span><br><span class="line"><span class="meta">... </span>   <span class="built_in">print</span>(<span class="string">&quot;hello world&quot;</span>)</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>Then output it like this:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(hello.__doc__)</span><br><span class="line">This function prints hello world</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br></pre></td></tr></table></figure>
+<p>A docstring is optional.</p>
+<p>Documentating code is a good practice in general. If you have large complex programs, you should add documentation at all time.</p>
+<h2 id="The-main-function"><a href="#The-main-function" class="headerlink" title="The main() function"></a>The main() function</h2><p>In some Python scripts, a main function is defined. Something like this:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Hello World!&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+<p>The <strong>main function</strong> is optional, your programs will run without it.</p>
+<p>The program starts in the <code>main()</code> function. This is common in other programming languages (C, C++). </p>
+<p>The line <code>if __name__ == &quot;__main__&quot;:</code> is True if the program starts, so <code>main()</code> is called.</p>
+<p>This main function is common in Python files that are <strong>executed as a script</strong> and <strong>imported in another module</strong>.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>In this tutorial you learned:</p>
+<ul>
+<li>What Python functions are</li>
+<li>How to <strong>define Python functions</strong></li>
+<li>Calling Python functions</li>
+<li>All about function arguments</li>
+</ul>
+<p>If you are a Python beginner, <a target="_blank" href="https://pythondevvasu.tk" rel="external nofollow" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python book');">then I highly recommend this book.</a></p>
+<p><a rel="external nofollow" target="_blank" href="https://pythondevvasu.tk" onclick="ga('send', 'event', 'Link Click', 'Beginner', 'Python');">Download exercises</a></p>
+
+ <!--     </section> -->
+    </section></article>
+
+
+     <!--Contact-->
+     <section id="contact" class="section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="header-section text-center">
+              <h2>Contact Us</h2>
+              <p>For more information Contact Us</p>
+              <hr class="bottom-line">
+            </div>
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="col-md-6 col-sm-6 col-xs-12 left">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12 right">
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required"
+                    data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                <!-- Button -->
+                <button type="submit" id="submit" name="submit"
+                  class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </section>
+      <!--/ Contact-->
+      <!--Footer-->
+      <footer id="footer" class="footer">
+        <div class="container text-center">
+
+          <h3> <a href="Lesson.HTML">Start Your Free Trial Now!</a> </h3>
+
+          <form class="mc-trial row">
+            <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
+              <div class=" controls">
+                <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
+              </div>
+            </div>
+            <!-- End email input -->
+            <div class="form-group col-md-3 col-sm-4">
+              <div class=" controls">
+                <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
+              </div>
+            </div>
+            <!-- End email input -->
+            <div class="col-md-2 col-sm-4">
+              <p>
+                <a href="Lesson.HTML">
+                  <button name="submit" type="submit" class="btn btn-block btn-submit">
+                    Submit <i class="fa fa-arrow-right"></i></button></a>
+              </p>
+            </div>
+          </form>
+          <!-- End newsletter-form -->
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/vasudev.jaiswal.9"><i class="fa fa-twitter fa-fw"></i></a></li>
+            <li><a href="https://www.facebook.com/vasudev.jaiswal.9"><i class="fa fa-facebook fa-fw"></i></a></li>
+            <li><a href="vasujaiswal00@gmail.com"><i class="fa fa-google-plus fa-fw"></i></a></li>
+
+            <li><a href="https://in.linkedin.com/in/vasudev-jaiswal-440b89192"><i class="fa fa-linkedin fa-fw"></i></a>
+              
+            </li>
+            <li><a href="https://github.com/VasudevJaiswal"><i class="fa fa-github fa-fw"></i></a> </li>
+          </ul>
+          ©2021 Theme Create by Vasudev Jaiswal . @All rights reserved
+
+        </div>
+      </footer>
+      <!--/ Footer-->
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.easing.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="contactform/contactform.js"></script>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+        ga('create', 'UA-67250722-6', 'auto');
+    
+        ga('send', 'pageview', {
+          'dimension2':  'master'
+        });
+      </script>
+      
+    </div>
+
+    
+</body>
+</html>

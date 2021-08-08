@@ -1,0 +1,48 @@
+       Chapter -1             Python - Variables Types
+
+# Variables are nothing but Reserved memory locations to #Store Values  .
+It means that when we create a variable , We Reserve some space in memory 
+
+
+        @ Assigning Values to Variables ::
+
+# Python variables do not need explicit declaration to Reserve memory space.
+The declaration happens automatically when you assign a value to a variable.
+
+   # The equal sign (=) is used to assign values to variables .
+
+Exp:: 
+
+     1. Counter = 100     #An Integer Assignment 
+     2. miles = 1000.23   #An Floating points Assignment
+     3. name = "Vasudev"  #An String Assignment
+     4. age = 19          #An Integer Assignment
+
+       @ Multiple Assignment ::
+
+# Python allows you to assign a single value to several variable simultaneously.
+
+Exp::   
+        1.  a = b = c = 1
+          print(b)
+Output = 1
+
+        2. a = b =c = 1,2,3,"Vasudev"
+
+        
+        @ standard Data Types  ::
+
+# The data stored in memory can be of many types. For example , a person's age is stored
+as  a numeric value and his or her address is stored as alphanumeric characters .
+
+:- Python has Five standard data Types ==:
+
+1. Numbers Data Types
+
+2. String Data Types
+
+3. List Data Types
+
+4. Tuple Data Types
+
+5. Dicitionary Data Types. 

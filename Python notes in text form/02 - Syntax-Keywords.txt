@@ -1,0 +1,56 @@
+ Chapter - 0                  Python - Syntax (Reserved Words)
+
+# These are Reserved Words and you cannot use them as a  constant or variables or 
+any other Indentifier names.
+             # All the Python  Keywords contain Lowrecase Letters Only .
+
+
+     and           elif          if            Print
+     as            else          import        raise 
+     assert        except        in            return
+     break         exec          is            try
+     class         finally       lambda        while
+     continue      for           Not           with
+     def           from          or            yield
+     del           global        pass
+
+                    @ Lines and Identation ::
+                
+# Python doesn't use braces ({ }) to indicate blocks of code for class and function 
+definitions or flow control .
+
+Exp :    if True:
+             print("true")
+         else:
+             print("false")
+
+    Output -  error 
+
+
+  @ Multi-Line Statements :: 
+
+# Statements in Python typically end with a new line. Python, however, allows the use
+of the line  #Continuation character (\) to denote that the line should continue/
+
+Exp :    total = item-one +\
+                 item-two +\
+                 item-three +\
+                 item-four 
+
+
+
+            @ Quotation in Python  :: 
+
+# Python accepts single (') , double (") and triple (''' or ''') quotes to
+denote string literals, as long as the same type of quote starts and ends the string.
+
+            @ Comments in Python ::
+
+# A hash singn (#) that is not inside a string literal is the beginning of a 
+Comment 
+
+1. #First Comment
+2. print("hello")    #Seconed Comments 
+3.  ''' 
+        multi-line Comments
+                              '''
