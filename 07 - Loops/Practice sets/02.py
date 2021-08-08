@@ -9,6 +9,7 @@ for i in range(1,11):
 
 
 ''' PS C:\Users\Vasudev Jaiswal\Documents\Python> & "C:/Users/Vasudev Jaiswal/AppData/Local/Programs/Python/Python39/python.exe" "c:/Users/Vasudev Jaiswal/Documents/Python/07 - Loops/Practice sets/02.py"
+# @output of Python code: 
 Enter the Number : 2
 2X1=2
 2X2=4
