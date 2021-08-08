@@ -53,3 +53,9 @@ if a>10:
     print("true")
 else:
     print("false")
+
+
+# Important Notes:
+
+# There can be any number of elif statements.
+# Last else is executed only if all the conditions inside elifs fail.

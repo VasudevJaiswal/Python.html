@@ -50,7 +50,7 @@ scripting.
 
 1. It can easily integrated C, C++ , COM, Active X , CORBA , Java.
 
-2. It supports automatic , garbage collection
+2. It supports automatic , garbage collection. 
 
 3. It provides very high-level dynamic data types and supports dynamic type 
 checking . 
