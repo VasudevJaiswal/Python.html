@@ -9,7 +9,10 @@ for name in l1:
         
 
 '''Result is
+
 PS C:\Users\Vasudev Jaiswal\Documents\Python> & "C:/Users/Vasudev Jaiswal/AppData/Local/Programs/Python/Python39/python.exe" "c:/Users/Vasudev Jaiswal/Documents/Python/07 - Loops/Practice sets/03.py"
+
+
 HelloVasudev
 HelloVivek
 HelloVikas
